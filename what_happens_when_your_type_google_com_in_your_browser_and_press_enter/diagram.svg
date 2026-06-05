@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect width="900" height="600" fill="#f8f9fa" rx="10"/>
+  <text x="450" y="35" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">What Happens When You Type https://www.google.com</text>
+  
+  <!-- Browser -->
+  <rect x="20" y="60" width="120" height="50" fill="#4285f4" rx="8"/>
+  <text x="80" y="80" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">BROWSER</text>
+  <text x="80" y="96" text-anchor="middle" font-family="Arial" font-size="9" fill="white">User types URL</text>
+  
+  <!-- Arrow to DNS -->
+  <line x1="140" y1="85" x2="210" y2="85" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="175" y="78" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">DNS Query</text>
+  
+  <!-- DNS -->
+  <rect x="210" y="60" width="120" height="50" fill="#34a853" rx="8"/>
+  <text x="270" y="80" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">DNS SERVER</text>
+  <text x="270" y="96" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Resolves IP address</text>
+  
+  <!-- Arrow back from DNS -->
+  <line x1="270" y1="110" x2="80" y2="110" stroke="#666" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow2)"/>
+  <text x="175" y="125" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">IP: 142.250.185.46</text>
+  
+  <!-- Vertical arrow down -->
+  <line x1="80" y1="110" x2="80" y2="155" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="95" y="135" font-family="Arial" font-size="8" fill="#666">TCP/IP</text>
+  
+  <!-- Firewall -->
+  <rect x="20" y="160" width="120" height="50" fill="#ea4335" rx="8"/>
+  <text x="80" y="180" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">FIREWALL</text>
+  <text x="80" y="196" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Traffic filtered</text>
+  
+  <!-- Arrow right -->
+  <line x1="140" y1="185" x2="210" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="175" y="178" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Port 443</text>
+  
+  <!-- HTTPS/TLS -->
+  <rect x="210" y="160" width="120" height="50" fill="#fbbc04" rx="8"/>
+  <text x="270" y="180" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">HTTPS/TLS</text>
+  <text x="270" y="196" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Encrypted tunnel</text>
+  
+  <!-- Arrow right -->
+  <line x1="330" y1="185" x2="400" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="178" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Encrypted</text>
+  
+  <!-- Load Balancer -->
+  <rect x="400" y="160" width="130" height="50" fill="#9c27b0" rx="8"/>
+  <text x="465" y="180" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">LOAD BALANCER</text>
+  <text x="465" y="196" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Distributes traffic</text>
+  
+  <!-- Arrow down to Web Server -->
+  <line x1="465" y1="210" x2="465" y2="255" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Web Server -->
+  <rect x="400" y="260" width="130" height="50" fill="#00bcd4" rx="8"/>
+  <text x="465" y="280" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">WEB SERVER</text>
+  <text x="465" y="296" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Serves static content</text>
+  
+  <!-- Arrow right to App Server -->
+  <line x1="530" y1="285" x2="600" y2="285" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="565" y="278" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Dynamic</text>
+  
+  <!-- Application Server -->
+  <rect x="600" y="260" width="130" height="50" fill="#ff5722" rx="8"/>
+  <text x="665" y="280" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">APP SERVER</text>
+  <text x="665" y="296" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Business logic</text>
+  
+  <!-- Arrow down to Database -->
+  <line x1="665" y1="310" x2="665" y2="355" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Database -->
+  <rect x="600" y="360" width="130" height="50" fill="#607d8b" rx="8"/>
+  <text x="665" y="380" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">DATABASE</text>
+  <text x="665" y="396" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Data storage</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="450" width="860" height="130" fill="#fff" rx="8" stroke="#ddd" stroke-width="1"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Request Flow Summary</text>
+  <text x="40" y="495" font-family="Arial" font-size="11" fill="#555">1. Browser sends DNS query → DNS server resolves www.google.com to IP address</text>
+  <text x="40" y="515" font-family="Arial" font-size="11" fill="#555">2. TCP/IP three-way handshake establishes connection to server on port 443</text>
+  <text x="40" y="535" font-family="Arial" font-size="11" fill="#555">3. Traffic passes through Firewall (port 443 allowed) → TLS handshake encrypts communication</text>
+  <text x="40" y="555" font-family="Arial" font-size="11" fill="#555">4. Load Balancer distributes request → Web Server serves page → App Server generates content → Database provides data</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
